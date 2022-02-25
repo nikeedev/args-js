@@ -1,12 +1,13 @@
 var devbuild = document.getElementById("devbuild");
 const urlParams = new URLSearchParams(window.location.search);
-if (window.location.search == '') {
+
+if (window.location.hostname == 'nikeedev.github.io') {
+    window.location = window.location.origin + '/args-js/index.html?load=prdct'
+}
+else if (window.location.search == '') {
     window.location = window.location.origin + '/index.html?load=prdct'
 }
 
-if (window.location.search == '/args-js') {
-    window.location = window.location.origin + '/args-js/index.html?load=prdct'
-}
 
 document.querySelector("html").style = "background-color: rgb(236, 236, 236);";
 
