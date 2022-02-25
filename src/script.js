@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 if (window.location.origin == 'nikeedev.github.io' && window.location.search == '') {
     window.location = window.location.origin + '/args-js/?load=prdct'
 }
-if (window.location.search === '') {
+if (!window.location.href.includes("?")) {
     window.location = window.location.href + '?load=prdct'
 }
 
