@@ -1,8 +1,11 @@
 var devbuild = document.getElementById("devbuild");
 const urlParams = new URLSearchParams(window.location.search);
 
-if (window.location.origin == 'nikeedev.github.io' && window.location.search === '') {
-    window.location = window.location.origin + '/args-js/index.html?load=prdct'
+if (window.location.origin == 'nikeedev.github.io' && window.location.search == '') {
+    window.location = window.location.origin + '/args-js/?load=prdct'
+}
+if (window.location.search === '') {
+    window.location = window.location.href + '?load=prdct'
 }
 
 
