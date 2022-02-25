@@ -1,7 +1,7 @@
 var devbuild = document.getElementById("devbuild");
 const urlParams = new URLSearchParams(window.location.search);
-if (window.location.search === '') {
-    window.location = window.location.origin + '?load=prdct'
+if (window.location.search == '') {
+    window.location = window.location.origin + '/index.html?load=prdct'
 }
 document.querySelector("html").style = "background-color: rgb(236, 236, 236);";
 
